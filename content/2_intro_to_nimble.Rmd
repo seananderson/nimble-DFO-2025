@@ -192,7 +192,7 @@ We consider spawner counts of Fraser River sockeye salmon. Recruits are estimate
 ```{r, eval = TRUE}
 library(tidyverse)
 library(readxl)
-sockeye <- read_excel("data/Production Data_Detailed Format.xlsx")
+sockeye <- read_excel("content/data/Production Data_Detailed Format.xlsx")
 stockid <- "Stellako"
 sox <- sockeye %>% 
   filter(production_stock_name == stockid) %>%
